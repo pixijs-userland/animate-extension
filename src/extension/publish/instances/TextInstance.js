@@ -140,9 +140,10 @@ p.renderContent = function(renderer)
         // Adjust the x position based on the bounds
         const width = this.initFrame.bounds.width * this.initFrame.sx;
         this.initFrame.x += isCenter ? width / 2 : width;
-        this.initFrame.x += this.initFrame.bounds.x * this.initFrame.sx;
-        this.initFrame.y += this.initFrame.bounds.y * this.initFrame.sy;
     }
+    this.initFrame.x += this.initFrame.bounds.x * this.initFrame.sx;
+    this.initFrame.y += this.initFrame.bounds.y * this.initFrame.sy;
+
     return buffer;
 }
 
