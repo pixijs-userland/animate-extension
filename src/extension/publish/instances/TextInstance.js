@@ -142,7 +142,7 @@ p.renderContent = function(renderer)
         this.initFrame.x += isCenter ? width / 2 : width;
     }
     
-    //Note Animate seems to consistently add 2 to the transform position and subtract 2 from the bounds position
+    // Note: Animate seems to consistently add 2 to the transform position and subtract 2 from the bounds position
     // Adding 2 back here seems to give more accurate text placement.
     this.initFrame.x += (this.initFrame.bounds.x + 2) * this.initFrame.sx;
     this.initFrame.y += (this.initFrame.bounds.y + 2) * this.initFrame.sy;
