@@ -496,6 +496,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F5977F0C09B7D3B80058A43E /* project.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_LINK_OBJC_RUNTIME = NO;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;

@@ -41,4 +41,4 @@ DVA_BUNDLE_IDENTIFIER = PixiAnimate.fcm.plugin
 DVA_BUNDLE_OS_CODE = FMWK
 MACOSX_DEPLOYMENT_TARGET = 10.9
 HEADER_SEARCH_PATHS = ../mac-xcode ../../src/SDK/core/include/common ../../src/SDK/core/include/interfaces ../../src/SDK/app/include/common ../../src/SDK/app/include/interfaces ../../src/SDK/app/include/interfaces/DOM ../../src/ThirdParty/libjson_7.6.1/libjson ../../src/SDK/app/include/interfaces/Exporter ../../src/PixiAnimate/include
-ARCHS = x86_64
+ARCHS = "$(ARCHS_STANDARD)";
