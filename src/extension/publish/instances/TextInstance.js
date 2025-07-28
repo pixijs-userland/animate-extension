@@ -149,4 +149,15 @@ p.renderContent = function(renderer)
     return buffer;
 }
 
+p.addToFrame = function(frameIndex, command)
+{
+    TextInstance.super_.prototype.addToFrame.call(this, frameIndex, command);
+    //In Animate, leading is applied after each line.
+    // In Pixi, leading is applied half above, and half below each line
+    // this adjustment applies only to one-frame text transforms.
+    if((command.type === 'Place' || command.type === 'Move') && this.frames[frameIndex].y !== null && this.paragraph && this.paragraph.linespacing){
+        this.frames[frameIndex].y -= this.paragraph.linespacing / 2;
+    }
+}
+
 module.exports = TextInstance;

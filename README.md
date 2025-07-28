@@ -69,6 +69,12 @@ For release:
 gulp plugin
 ```
 
+#### Mac OS installation note:
+If the extension is built using a self-signed certificate, then installed on a different machine, Mac OS's security policy may say that the file cannot be opened and/or the file is damaged. The following command should remove the restriction on the plugin being able to run:
+```bash
+xattr -d com.apple.quarantine ~/Library/Application\ Support/Adobe/CEP/extensions/com.jibo.PixiAnimate/plugin/lib/mac/PixiAnimate.fcm.plugin
+```
+
 ### Windows Instructions ###
 * Microsoft Windows 7 64-bit or higher required
 * Adobe Animate CC 2015 x64 w/ ZXP utility for Windows
