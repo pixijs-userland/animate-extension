@@ -487,6 +487,7 @@
 					../../src/SDK/app/include/interfaces/Exporter,
 					../../src/PixiAnimate/include,
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = "${DVA_BUNDLE_IDENTIFIER}";
 				PRODUCT_NAME = PixiAnimate;
 			};
@@ -556,6 +557,7 @@
 					../../src/SDK/app/include/interfaces/Exporter,
 					../../src/PixiAnimate/include,
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = "${DVA_BUNDLE_IDENTIFIER}";
 				PRODUCT_NAME = PixiAnimate;
 			};

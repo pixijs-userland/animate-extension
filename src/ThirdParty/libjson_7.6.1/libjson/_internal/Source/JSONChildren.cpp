@@ -72,7 +72,7 @@ void jsonChildren::inc(json_index_t amount) json_nothrow {
 void jsonChildren::deleteAll(void) json_nothrow {
     JSON_ASSERT(this != 0, JSON_TEXT("Children is null deleteAll"));
     json_foreach(this, runner){
-        JSON_ASSERT(*runner != JSON_TEXT('\0'), JSON_TEXT("a null pointer within the children"));
+        JSON_ASSERT(*runner != NULL, JSON_TEXT("a null pointer within the children"));
 	   JSONNode::deleteJSONNode(*runner);  //this is why I can't do forward declaration
     }
 }
